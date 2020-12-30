@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+        <link rel="stylesheet" href="CSS/style.css"/>
+    </head>
+    <body>
+        <div class="player">
+            <div class="container">
+                <!-- Top Icons -->
+                <div class="icons">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                    <h1>My Music</h1>
+                    <a href="#"><i class="far fa-heart"></i></a>
+
+                </div>
+
+                <!-- img -->
+                <div class="img">
+                    <img src="Images/Cover_One.png" alt=""/>
+                </div>
+
+                <!-- Title -->
+                <div class="title">
+                    <h1>Country Gospel</h1>
+                    <p>Gospel Artists - No Name</p>
+                </div>
+
+                <!-- time -->
+                <div class="time">
+                    00:00
+                    <span></span>
+                    00:00
+                </div>
+
+                <!-- Seek bar -->
+                <div class="seek">
+                    <div class="fill"></div>
+                </div>
+            </div>
+
+            <!-- Audio Buttons -->
+            <div class="audio-btns">
+                <div class="play-btns">
+                    <a href="#" onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+                    <a href="#" class="play-pause" onclick="togglePlayPause()"><i class="fa fa-play"></i></a>
+                    <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+                </div>
+                <div class="repeat-btns">
+                <a href="#"><i class="fa fa-retweet"></i></a>
+                <span>
+                    <button class="decrease" onclick="decreaseVolume()">-</button>
+                    <a href="#" class="volume-up" onclick="muteVolume()"><i class="fa fa-volume-up"></i></a>
+                    <button class="increase" onclick="increaseVolume()">+</button>
+                </span>
+                <a href="#" class="reshuffle" onclick="reshuffleSong()"><i class="fa fa-random"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>       
+        <script src="JavaScript/app.js"></script>
+    </body>
+</html>
